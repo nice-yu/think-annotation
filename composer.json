@@ -1,0 +1,40 @@
+{
+  "name": "nice-yu/think-annotation",
+  "description": "thinkphp6 routing annotation",
+  "keywords": ["thinkphp6","thinkphp6 route annotation","route version annotation","route security annotation"],
+  "homepage": "https://github.com/nice-yu/think-annotation",
+  "type": "library",
+  "license": "MIT",
+  "authors": [
+    {
+      "name": "nice-yu",
+      "email": "nice-yu@qq.com"
+    }
+  ],
+  "autoload":{
+    "psr-4":{
+      "NiceYu\\ThinkAnnotation\\": "./src/"
+    }
+  },
+  "require": {
+    "php": ">=7.4",
+    "topthink/framework": ">=6.0",
+    "doctrine/annotations": ">=1.13",
+    "jms/serializer": ">=3.18"
+  },
+  "extra": {
+    "think": {
+      "services": [
+        "NiceYu\\ThinkAnnotation\\Service"
+      ],
+      "config": {
+        "route_version": "src/Config/version.php",
+        "route_security": "src/Config/security.php",
+        "route_annotation": "src/Config/route.php"
+      }
+    }
+  },
+  "require-dev": {
+    "symfony/var-dumper": "5.4"
+  }
+}

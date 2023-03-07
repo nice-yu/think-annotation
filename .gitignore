@@ -1,0 +1,18 @@
+# Mac
+.DS_Store
+
+# IDE
+.idea/*
+
+# Composer
+vendor/*
+composer.lock
+composer.phar
+
+# Test
+index.php
+test.php
+
+# PHPUnit
+.phpunit.cache
+tests/codeCoverage
