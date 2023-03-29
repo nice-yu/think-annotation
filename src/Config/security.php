@@ -7,12 +7,14 @@ return array(
      * - true: 开启
      * - false: 关闭
      */
-    'enable'    =>  true,
+    'enable'    =>  false,
 
     /**
      * 模块 ( 模块 => 用户提供者 )
      */
     'module'    =>  [
-//        'admin' =>  NiceYu\ThinkRouteSecurity\AdminUserProvider::class // 示例
+//        'admin' =>  NiceYu\ThinkRouteSecurity\AdminUserProvider::class, // 示例 1
+//        'admin' =>  NiceYu\ThinkRouteSecurity\AdminUserProvider::class, // 示例 2
+//        'admin' =>  NiceYu\ThinkRouteSecurity\AdminUserProvider::class, // 示例 3
     ]
 );

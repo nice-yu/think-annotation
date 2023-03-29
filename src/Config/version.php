@@ -7,7 +7,7 @@ return array(
      * - true: 开启
      * - false: 关闭
      */
-    'enable'    =>  true,
+    'enable'    =>  false,
 
     /**
      * 版本参数位置

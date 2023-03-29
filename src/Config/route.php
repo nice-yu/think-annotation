@@ -11,8 +11,13 @@ return array(
 
     /**
      * 控制器路径, 多应用时记得配置
-     * // think\facade\App::getAppPath(), // 单应用
-     * // think\facade\App::getAppPath() . 'admin/',  //多应用
+     * 单应用
+     * think\facade\App::getAppPath()
+     *
+     * 多应用
+     * think\facade\App::getAppPath() . 'home/',
+     * think\facade\App::getAppPath() . 'index/',
+     * think\facade\App::getAppPath() . 'admin/',
      */
     'controller'=>  [
 //        think\facade\App::getAppPath(), // 单应用

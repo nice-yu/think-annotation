@@ -40,12 +40,14 @@ trait InjectVersion
      */
     public function hasVersion(array $versions):bool
     {
-        ['enable'=>$enable,'version'=>$version] = $this->version;
-        if ($enable){
-            if (in_array($version,$versions)){
-                return true;
+        if (!empty($this->version)){
+            ['enable'=>$enable,'version'=>$version] = $this->version;
+            if ($enable){
+                if (in_array($version,$versions)){
+                    return true;
+                }
+                return false;
             }
-            return false;
         }
         return true;
     }
